@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Stats Comparator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Stats Comparator</h1>
+        <div class="form">
+            <!-- Pokémon Name Inputs -->
+            <label for="pokemon1">First Pokémon:</label>
+            <input type="text" id="pokemon1" placeholder="Enter Pokémon name" autocomplete="off">
+            <div id="suggestions1" class="suggestions-box"></div>
+
+            <label for="pokemon2">Second Pokémon:</label>
+            <input type="text" id="pokemon2" placeholder="Enter Pokémon name" autocomplete="off">
+            <div id="suggestions2" class="suggestions-box"></div>
+
+            <!-- Compare Button -->
+            <button id="compare-btn">Compare Pokémon</button>
+        </div>
+        <div id="chart-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

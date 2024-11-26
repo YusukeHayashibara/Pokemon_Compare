@@ -1,0 +1,77 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+}
+
+.form {
+    margin: 20px 0;
+    position: relative; /* Necessário para o posicionamento correto das caixas de sugestões */
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #6390F0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #506dcf;
+}
+
+#chart-container {
+    margin-top: 30px;
+}
+
+/* Estilos da caixa de sugestões */
+.suggestions-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    position: absolute; /* A caixa será posicionada abaixo do input */
+    top: 100%; /* Fica imediatamente abaixo do input */
+    left: 0;
+    width: 100%; /* Largura igual ao input */
+    z-index: 10;
+    display: none;
+}
+
+.suggestions-box div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions-box div:hover {
+    background-color: #f0f0f0;
+}
