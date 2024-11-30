@@ -1,47 +1,68 @@
-/* Estilos Gerais */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: Gill Sans, sans-serif;
+    background-color: #ffffff; 
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 1200px; 
     margin: 0 auto;
-    text-align: center;
     padding: 20px;
+}
+
+.left-panel {
+    width: 30%;
+    text-align: left;
+}
+
+.right-panel {
+    width: 65%;
 }
 
 h1 {
     color: #444;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .form {
     margin: 20px 0;
-    position: relative; /* Necessário para o posicionamento correto das caixas de sugestões */
+    position: relative;
 }
 
 label {
+    display: block;
     font-size: 16px;
     color: #333;
+    margin-bottom: 5px;
 }
 
 input {
-    margin: 10px 0;
-    padding: 8px;
-    width: 80%;
-    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
 }
 
 button {
-    padding: 10px 15px;
+    width: 100%;
+    padding: 10px 50px;
     font-size: 16px;
     background-color: #6390F0;
     color: white;
     border: none;
+    border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -50,28 +71,36 @@ button:hover {
 
 #chart-container {
     margin-top: 30px;
+    text-align: center;
 }
 
-/* Estilos da caixa de sugestões */
 .suggestions-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
     border: 1px solid #ccc;
     border-radius: 4px;
-    max-height: 150px;
-    overflow-y: auto;
     background-color: #fff;
-    position: absolute; /* A caixa será posicionada abaixo do input */
-    top: 100%; /* Fica imediatamente abaixo do input */
-    left: 0;
-    width: 100%; /* Largura igual ao input */
     z-index: 10;
     display: none;
 }
 
 .suggestions-box div {
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .suggestions-box div:hover {
     background-color: #f0f0f0;
+}
+
+.legend {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
 }
