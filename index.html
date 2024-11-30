@@ -9,22 +9,37 @@
 </head>
 <body>
     <div class="container">
-        <h1>Pokémon Stats Comparator</h1>
-        <div class="form">
-            <!-- Pokémon Name Inputs -->
-            <label for="pokemon1">First Pokémon:</label>
-            <input type="text" id="pokemon1" placeholder="Enter Pokémon name" autocomplete="off">
-            <div id="suggestions1" class="suggestions-box"></div>
-
-            <label for="pokemon2">Second Pokémon:</label>
-            <input type="text" id="pokemon2" placeholder="Enter Pokémon name" autocomplete="off">
-            <div id="suggestions2" class="suggestions-box"></div>
-
-            <!-- Compare Button -->
-            <button id="compare-btn">Compare Pokémon</button>
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <h1>Pokémon Stats Comparator</h1>
+            <div class="form">
+                <label for="pokemon1">First Pokémon:</label>
+                <input type="text" id="pokemon1" placeholder="Enter Pokémon name" autocomplete="off">
+                <div id="suggestions1" class="suggestions-box"></div>
+    
+                <label for="pokemon2">Second Pokémon:</label>
+                <input type="text" id="pokemon2" placeholder="Enter Pokémon name" autocomplete="off">
+                <div id="suggestions2" class="suggestions-box"></div>
+    
+                <div id="addedPokemon" class="form">
+                    <label for="pokemon3">Third Pokémon:</label>
+                    <input type="text" id="pokemon3" placeholder="Enter Pokémon name" autocomplete="off">
+                    <div id="suggestions3" class="suggestions-box"></div>
+                </div>
+    
+                <button id="compare-btn">Compare Pokémon</button>
+            </div>
         </div>
-        <div id="chart-container"></div>
+    
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div id="chart-container"></div>
+            <div class="legend" id="legend-container">
+                <!-- Legend content will be added dynamically -->
+            </div>
+        </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
